@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SuperJet 2.0", "SuperJet 2.0.vbproj", "{BD45F2FB-7332-4F8C-810A-E15572EC3E87}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD45F2FB-7332-4F8C-810A-E15572EC3E87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD45F2FB-7332-4F8C-810A-E15572EC3E87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD45F2FB-7332-4F8C-810A-E15572EC3E87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD45F2FB-7332-4F8C-810A-E15572EC3E87}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {13B60A5D-579C-40C6-B3E5-9ACB20E72DD7}
+	EndGlobalSection
+EndGlobal
