@@ -257,7 +257,6 @@
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="SuperJet 2.0_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="SuperJet 2.0.mdb">

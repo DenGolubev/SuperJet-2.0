@@ -36,12 +36,16 @@ Module Модуль_Input
             CurentRow = db_table.Rows.Item(i)
             Dim CurentCellArray() = CurentRow.ItemArray
             Dim mass_storage() = {CurentCellArray(0), CurentCellArray(1), CurentCellArray(2), CurentCellArray(3), CurentCellArray(4), CurentCellArray(5), CurentCellArray(6),
-       CDate(CurentCellArray(7)), CurentCellArray(8), CurentCellArray(9), CurentCellArray(10), CurentCellArray(11), CurentCellArray(12), CurentCellArray(13), CurentCellArray(14),
-                CurentCellArray(15), CurentCellArray(16), CurentCellArray(17), CurentCellArray(18), CurentCellArray(19), CurentCellArray(20), CurentCellArray(21), CurentCellArray(22),
-                CurentCellArray(23), CurentCellArray(24)}
-            If CurentCellArray(16).ToString = "" Then
-                MsgBox("Нет статуса " & CurentCellArray(1) & "")
+            CDate(CurentCellArray(7)), CurentCellArray(8), CurentCellArray(9), CurentCellArray(10), CurentCellArray(11), CurentCellArray(12), CurentCellArray(13), CurentCellArray(14),
+            CurentCellArray(15), CurentCellArray(16), CurentCellArray(17), CurentCellArray(18), CurentCellArray(19), CurentCellArray(20), CurentCellArray(21), CurentCellArray(22),
+            CurentCellArray(23), CurentCellArray(24)}
+
+            '' Счетчик пустых ячеек
+            If CurentCellArray(15).ToString = "" And CurentCellArray(16).ToString = "" Then
+
+
             End If
+
             db_com.Connection = db_con
             db_con.Open()
             db_com.CommandText = "insert into time_table ( UIN, WFMN, TELN, Ispolnitel, Status, Type, Time_on, DTCS, Nevipolnenye, Comment, Area, Time_start, PhoneN, Address, 
@@ -56,7 +60,7 @@ values (" & mass_storage(0) & ", " & mass_storage(1) & ", " & mass_storage(2) & 
             'Debug.WriteLine(TypeName(mass_storage(7)))
             Форма_загрузки_TaskList.ProgressBar1.Minimum = 0
             Форма_загрузки_TaskList.ProgressBar1.Maximum = db_table.Rows.Count
-            y +=
+            y += 1
             Форма_загрузки_TaskList.ProgressBar1.Value = y
             Форма_загрузки_TaskList.ProgressBar1.PerformStep()
             Форма_загрузки_TaskList.TextBox1.Text = y
