@@ -72,7 +72,6 @@ Public Class Форма_приема_нарядов
         db_table.Load(db_reader)
         db_con.Close()
         i = db_table.Rows.Count
-        'DataGridView3.DataSource = db_table
         Return i
     End Function
 
@@ -99,18 +98,28 @@ Public Class Форма_приема_нарядов
         End If
     End Sub
 
-
     Sub Rec_data()
-        Try
-            db_com.Connection = db_con
-            db_con.Open()
-            db_com.CommandText = "Update [TaskList Total] set [Status_sdano] = 'Сдано', [Data_sdachi] = '" & Format(Now, "dd/MM/yyyy") & "', [Fakt_Ispolnitel] = '" & TextBox5.Text & "' 
-where [UIN] LIKE '%" & TextBox2.Text & "%'"
-            db_com.ExecuteNonQuery()
-            db_con.Close()
-        Catch ex As Exception
-            MessageBox.Show(ex.Message)
-        End Try
+
+        If check_internet_status() = False Then
+            Me.Hide()
+            Форма_коррекции_данных.Show()
+        ElseIf check_TV_status = False Then
+            Me.Hide()
+            Форма_коррекции_данных.Show()
+        Else
+            Try
+                db_com.Connection = db_con
+                db_con.Open()
+                db_com.CommandText = "Update [TaskList Total] set [Status_sdano] = 'Сдано', [Data_sdachi] = '" & Format(Now, "dd/MM/yyyy") & "', [Fakt_Ispolnitel] = '" & TextBox5.Text & "' 
+        where [UIN] LIKE '%" & TextBox2.Text & "%'"
+                db_com.ExecuteNonQuery()
+                db_con.Close()
+            Catch ex As Exception
+                MessageBox.Show(ex.Message)
+            End Try
+        End If
+
+
     End Sub
 
     Sub Rec_data_courier()

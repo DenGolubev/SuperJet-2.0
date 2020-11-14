@@ -130,6 +130,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="My_function.vb" />
     <Compile Include="Модуль Combobox.vb" />
     <Compile Include="Модуль Connect TaskList.vb" />
     <Compile Include="Модуль Connect.vb" />
@@ -145,6 +146,7 @@
     <Compile Include="Модуль создания дочерних форм.vb" />
     <Compile Include="Модуль создания таблиц.vb" />
     <Compile Include="Модуль сравнения БД.vb" />
+    <Compile Include="Модуль_check.vb" />
     <Compile Include="Форма 36 часов.Designer.vb">
       <DependentUpon>Форма 36 часов.vb</DependentUpon>
     </Compile>
@@ -179,6 +181,12 @@
       <DependentUpon>Форма Конвертация.vb</DependentUpon>
     </Compile>
     <Compile Include="Форма Конвертация.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Форма коррекции данных.Designer.vb">
+      <DependentUpon>Форма коррекции данных.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Форма коррекции данных.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Форма приема нарядов.Designer.vb">
@@ -231,6 +239,9 @@
     <EmbeddedResource Include="Форма Конвертация.resx">
       <DependentUpon>Форма Конвертация.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Форма коррекции данных.resx">
+      <DependentUpon>Форма коррекции данных.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Форма приема нарядов.resx">
       <DependentUpon>Форма приема нарядов.vb</DependentUpon>
     </EmbeddedResource>
@@ -259,6 +270,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Alert_page.html" />
     <Content Include="SuperJet 2.0.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

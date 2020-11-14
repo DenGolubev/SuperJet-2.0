@@ -39,13 +39,6 @@ Module Модуль_Input
             CDate(CurentCellArray(7)), CurentCellArray(8), CurentCellArray(9), CurentCellArray(10), CurentCellArray(11), CurentCellArray(12), CurentCellArray(13), CurentCellArray(14),
             CurentCellArray(15), CurentCellArray(16), CurentCellArray(17), CurentCellArray(18), CurentCellArray(19), CurentCellArray(20), CurentCellArray(21), CurentCellArray(22),
             CurentCellArray(23), CurentCellArray(24)}
-
-            '' Счетчик пустых ячеек
-            If CurentCellArray(15).ToString = "" And CurentCellArray(16).ToString = "" Then
-
-
-            End If
-
             db_com.Connection = db_con
             db_con.Open()
             db_com.CommandText = "insert into time_table ( UIN, WFMN, TELN, Ispolnitel, Status, Type, Time_on, DTCS, Nevipolnenye, Comment, Area, Time_start, PhoneN, Address, 
