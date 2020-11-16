@@ -99,12 +99,13 @@ Public Class Форма_приема_нарядов
     End Sub
 
     Sub Rec_data()
-
-        If check_internet_status() = False Then
+        If check_internet_status(TextBox2.Text) = False Then
             Me.Hide()
+            Форма_коррекции_данных.Label9.Text = "Коррекция статуса Интернет"
             Форма_коррекции_данных.Show()
-        ElseIf check_TV_status = False Then
+        ElseIf check_TV_status(TextBox2.Text) = False Then
             Me.Hide()
+            Форма_коррекции_данных.Label9.Text = "Коррекция статуса ТВ"
             Форма_коррекции_данных.Show()
         Else
             Try
@@ -117,7 +118,9 @@ Public Class Форма_приема_нарядов
             Catch ex As Exception
                 MessageBox.Show(ex.Message)
             End Try
+
         End If
+
 
 
     End Sub

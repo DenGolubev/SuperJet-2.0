@@ -19,7 +19,4 @@ Module Модуль_Output_Data
             db_con.Close()
         End Try
     End Sub
-
-
-
 End Module
