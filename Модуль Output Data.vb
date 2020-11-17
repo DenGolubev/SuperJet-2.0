@@ -19,4 +19,22 @@ Module Модуль_Output_Data
             db_con.Close()
         End Try
     End Sub
+
+    Public Function Output_Data(i As String)
+        Dim info_data As VariantType
+        Dim db_table As New DataTable
+        Try
+            db_con.Open()
+            Dim db_adapter As New OleDbDataAdapter(i, db_con)
+            info_data = VariantType.Long
+            info_data = db_adapter.Fill(db_table)
+            'db_adapter.Fill(db_table)
+            'dgv.DataSource = db_table
+            db_con.Close()
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+            db_con.Close()
+        End Try
+        Return info_data
+    End Function
 End Module

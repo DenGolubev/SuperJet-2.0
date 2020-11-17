@@ -99,10 +99,10 @@ Partial Class Форма_Конвертация
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.TextBox31 = New System.Windows.Forms.TextBox()
-        Me.Label33 = New System.Windows.Forms.Label()
-        Me.TextBox32 = New System.Windows.Forms.TextBox()
-        Me.Label34 = New System.Windows.Forms.Label()
+        Me.TextBox33 = New System.Windows.Forms.TextBox()
+        Me.Label35 = New System.Windows.Forms.Label()
+        Me.TextBox34 = New System.Windows.Forms.TextBox()
+        Me.Label36 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -561,6 +561,10 @@ Partial Class Форма_Конвертация
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.TextBox33)
+        Me.GroupBox3.Controls.Add(Me.Label35)
+        Me.GroupBox3.Controls.Add(Me.TextBox34)
+        Me.GroupBox3.Controls.Add(Me.Label36)
         Me.GroupBox3.Controls.Add(Me.TextBox25)
         Me.GroupBox3.Controls.Add(Me.Label25)
         Me.GroupBox3.Controls.Add(Me.Label26)
@@ -591,10 +595,10 @@ Partial Class Форма_Конвертация
         Me.TextBox25.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox25.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox25.Enabled = False
-        Me.TextBox25.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.TextBox25.Location = New System.Drawing.Point(765, 87)
+        Me.TextBox25.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.TextBox25.Location = New System.Drawing.Point(549, 89)
         Me.TextBox25.Name = "TextBox25"
-        Me.TextBox25.Size = New System.Drawing.Size(100, 25)
+        Me.TextBox25.Size = New System.Drawing.Size(72, 19)
         Me.TextBox25.TabIndex = 80
         Me.TextBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -602,10 +606,10 @@ Partial Class Форма_Конвертация
         '
         Me.Label25.AutoSize = True
         Me.Label25.BackColor = System.Drawing.SystemColors.Control
-        Me.Label25.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label25.Location = New System.Drawing.Point(492, 133)
+        Me.Label25.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.Label25.Location = New System.Drawing.Point(339, 133)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(225, 24)
+        Me.Label25.Size = New System.Drawing.Size(170, 18)
         Me.Label25.TabIndex = 73
         Me.Label25.Text = "% нарядов в 36 часов"
         '
@@ -613,10 +617,10 @@ Partial Class Форма_Конвертация
         '
         Me.Label26.AutoSize = True
         Me.Label26.BackColor = System.Drawing.SystemColors.Control
-        Me.Label26.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label26.Location = New System.Drawing.Point(492, 90)
+        Me.Label26.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.Label26.Location = New System.Drawing.Point(339, 90)
         Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(256, 24)
+        Me.Label26.Size = New System.Drawing.Size(192, 18)
         Me.Label26.TabIndex = 79
         Me.Label26.Text = "Просрочено ТТ в 24 часа"
         '
@@ -625,10 +629,10 @@ Partial Class Форма_Конвертация
         Me.TextBox26.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox26.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox26.Enabled = False
-        Me.TextBox26.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.TextBox26.Location = New System.Drawing.Point(765, 130)
+        Me.TextBox26.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.TextBox26.Location = New System.Drawing.Point(549, 132)
         Me.TextBox26.Name = "TextBox26"
-        Me.TextBox26.Size = New System.Drawing.Size(100, 25)
+        Me.TextBox26.Size = New System.Drawing.Size(72, 19)
         Me.TextBox26.TabIndex = 74
         Me.TextBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -637,10 +641,10 @@ Partial Class Форма_Конвертация
         Me.TextBox27.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox27.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox27.Enabled = False
-        Me.TextBox27.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.TextBox27.Location = New System.Drawing.Point(765, 45)
+        Me.TextBox27.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.TextBox27.Location = New System.Drawing.Point(549, 47)
         Me.TextBox27.Name = "TextBox27"
-        Me.TextBox27.Size = New System.Drawing.Size(100, 25)
+        Me.TextBox27.Size = New System.Drawing.Size(72, 19)
         Me.TextBox27.TabIndex = 78
         Me.TextBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -648,10 +652,10 @@ Partial Class Форма_Конвертация
         '
         Me.Label27.AutoSize = True
         Me.Label27.BackColor = System.Drawing.SystemColors.Control
-        Me.Label27.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label27.Location = New System.Drawing.Point(492, 176)
+        Me.Label27.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.Label27.Location = New System.Drawing.Point(339, 176)
         Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(214, 24)
+        Me.Label27.Size = New System.Drawing.Size(161, 18)
         Me.Label27.TabIndex = 75
         Me.Label27.Text = "% нарядов в 24 часа"
         '
@@ -659,10 +663,10 @@ Partial Class Форма_Конвертация
         '
         Me.Label28.AutoSize = True
         Me.Label28.BackColor = System.Drawing.SystemColors.Control
-        Me.Label28.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label28.Location = New System.Drawing.Point(492, 48)
+        Me.Label28.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.Label28.Location = New System.Drawing.Point(339, 48)
         Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(267, 24)
+        Me.Label28.Size = New System.Drawing.Size(201, 18)
         Me.Label28.TabIndex = 77
         Me.Label28.Text = "Просрочено ТТ в 36 часов"
         '
@@ -671,10 +675,10 @@ Partial Class Форма_Конвертация
         Me.TextBox28.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox28.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox28.Enabled = False
-        Me.TextBox28.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.TextBox28.Location = New System.Drawing.Point(765, 173)
+        Me.TextBox28.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.TextBox28.Location = New System.Drawing.Point(549, 175)
         Me.TextBox28.Name = "TextBox28"
-        Me.TextBox28.Size = New System.Drawing.Size(100, 25)
+        Me.TextBox28.Size = New System.Drawing.Size(72, 19)
         Me.TextBox28.TabIndex = 76
         Me.TextBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -682,10 +686,10 @@ Partial Class Форма_Конвертация
         '
         Me.Label21.AutoSize = True
         Me.Label21.BackColor = System.Drawing.SystemColors.Control
-        Me.Label21.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.Label21.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
         Me.Label21.Location = New System.Drawing.Point(15, 48)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(189, 24)
+        Me.Label21.Size = New System.Drawing.Size(143, 18)
         Me.Label21.TabIndex = 67
         Me.Label21.Text = "Запланировано ТТ"
         '
@@ -693,10 +697,10 @@ Partial Class Форма_Конвертация
         '
         Me.Label22.AutoSize = True
         Me.Label22.BackColor = System.Drawing.SystemColors.Control
-        Me.Label22.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.Label22.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
         Me.Label22.Location = New System.Drawing.Point(14, 92)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(148, 24)
+        Me.Label22.Size = New System.Drawing.Size(112, 18)
         Me.Label22.TabIndex = 65
         Me.Label22.Text = "Выполнено ТТ"
         '
@@ -705,10 +709,10 @@ Partial Class Форма_Конвертация
         Me.TextBox21.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox21.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox21.Enabled = False
-        Me.TextBox21.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.TextBox21.Location = New System.Drawing.Point(287, 89)
+        Me.TextBox21.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.TextBox21.Location = New System.Drawing.Point(223, 89)
         Me.TextBox21.Name = "TextBox21"
-        Me.TextBox21.Size = New System.Drawing.Size(100, 25)
+        Me.TextBox21.Size = New System.Drawing.Size(72, 19)
         Me.TextBox21.TabIndex = 66
         Me.TextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -717,10 +721,10 @@ Partial Class Форма_Конвертация
         Me.TextBox22.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox22.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox22.Enabled = False
-        Me.TextBox22.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.TextBox22.Location = New System.Drawing.Point(288, 45)
+        Me.TextBox22.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.TextBox22.Location = New System.Drawing.Point(224, 45)
         Me.TextBox22.Name = "TextBox22"
-        Me.TextBox22.Size = New System.Drawing.Size(100, 25)
+        Me.TextBox22.Size = New System.Drawing.Size(72, 19)
         Me.TextBox22.TabIndex = 68
         Me.TextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -728,10 +732,10 @@ Partial Class Форма_Конвертация
         '
         Me.Label23.AutoSize = True
         Me.Label23.BackColor = System.Drawing.SystemColors.Control
-        Me.Label23.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.Label23.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
         Me.Label23.Location = New System.Drawing.Point(14, 136)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(258, 24)
+        Me.Label23.Size = New System.Drawing.Size(194, 18)
         Me.Label23.TabIndex = 69
         Me.Label23.Text = "Выполнено ТТ в 36 часов"
         '
@@ -740,10 +744,10 @@ Partial Class Форма_Конвертация
         Me.TextBox23.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox23.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox23.Enabled = False
-        Me.TextBox23.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.TextBox23.Location = New System.Drawing.Point(287, 133)
+        Me.TextBox23.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.TextBox23.Location = New System.Drawing.Point(223, 133)
         Me.TextBox23.Name = "TextBox23"
-        Me.TextBox23.Size = New System.Drawing.Size(100, 25)
+        Me.TextBox23.Size = New System.Drawing.Size(72, 19)
         Me.TextBox23.TabIndex = 70
         Me.TextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -752,10 +756,10 @@ Partial Class Форма_Конвертация
         Me.TextBox24.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox24.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox24.Enabled = False
-        Me.TextBox24.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.TextBox24.Location = New System.Drawing.Point(287, 176)
+        Me.TextBox24.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.TextBox24.Location = New System.Drawing.Point(223, 176)
         Me.TextBox24.Name = "TextBox24"
-        Me.TextBox24.Size = New System.Drawing.Size(100, 25)
+        Me.TextBox24.Size = New System.Drawing.Size(72, 19)
         Me.TextBox24.TabIndex = 72
         Me.TextBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -763,10 +767,10 @@ Partial Class Форма_Конвертация
         '
         Me.Label24.AutoSize = True
         Me.Label24.BackColor = System.Drawing.SystemColors.Control
-        Me.Label24.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.Label24.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
         Me.Label24.Location = New System.Drawing.Point(14, 179)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(247, 24)
+        Me.Label24.Size = New System.Drawing.Size(185, 18)
         Me.Label24.TabIndex = 71
         Me.Label24.Text = "Выполнено ТТ в 24 часа"
         '
@@ -924,59 +928,55 @@ Partial Class Форма_Конвертация
         Me.CheckBox1.TabIndex = 86
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
-        'TextBox31
+        'TextBox33
         '
-        Me.TextBox31.BackColor = System.Drawing.SystemColors.Control
-        Me.TextBox31.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox31.Enabled = False
-        Me.TextBox31.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.TextBox31.Location = New System.Drawing.Point(720, 104)
-        Me.TextBox31.Name = "TextBox31"
-        Me.TextBox31.Size = New System.Drawing.Size(94, 25)
-        Me.TextBox31.TabIndex = 92
-        Me.TextBox31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TextBox33.BackColor = System.Drawing.SystemColors.Control
+        Me.TextBox33.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox33.Enabled = False
+        Me.TextBox33.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.TextBox33.Location = New System.Drawing.Point(835, 89)
+        Me.TextBox33.Name = "TextBox33"
+        Me.TextBox33.Size = New System.Drawing.Size(58, 19)
+        Me.TextBox33.TabIndex = 96
+        Me.TextBox33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Label33
+        'Label35
         '
-        Me.Label33.AutoSize = True
-        Me.Label33.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label33.Location = New System.Drawing.Point(434, 104)
-        Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(224, 24)
-        Me.Label33.TabIndex = 91
-        Me.Label33.Text = "Интернет без статуса"
+        Me.Label35.AutoSize = True
+        Me.Label35.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.Label35.Location = New System.Drawing.Point(655, 87)
+        Me.Label35.Name = "Label35"
+        Me.Label35.Size = New System.Drawing.Size(116, 18)
+        Me.Label35.TabIndex = 95
+        Me.Label35.Text = "ТВ без статуса"
         '
-        'TextBox32
+        'TextBox34
         '
-        Me.TextBox32.BackColor = System.Drawing.SystemColors.Control
-        Me.TextBox32.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox32.Enabled = False
-        Me.TextBox32.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.TextBox32.Location = New System.Drawing.Point(721, 138)
-        Me.TextBox32.Name = "TextBox32"
-        Me.TextBox32.Size = New System.Drawing.Size(94, 25)
-        Me.TextBox32.TabIndex = 94
-        Me.TextBox32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TextBox34.BackColor = System.Drawing.SystemColors.Control
+        Me.TextBox34.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox34.Enabled = False
+        Me.TextBox34.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.TextBox34.Location = New System.Drawing.Point(835, 49)
+        Me.TextBox34.Name = "TextBox34"
+        Me.TextBox34.Size = New System.Drawing.Size(58, 19)
+        Me.TextBox34.TabIndex = 94
+        Me.TextBox34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Label34
+        'Label36
         '
-        Me.Label34.AutoSize = True
-        Me.Label34.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label34.Location = New System.Drawing.Point(436, 138)
-        Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(159, 24)
-        Me.Label34.TabIndex = 93
-        Me.Label34.Text = "ТВ без статуса"
+        Me.Label36.AutoSize = True
+        Me.Label36.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.Label36.Location = New System.Drawing.Point(655, 47)
+        Me.Label36.Name = "Label36"
+        Me.Label36.Size = New System.Drawing.Size(164, 18)
+        Me.Label36.TabIndex = 93
+        Me.Label36.Text = "Интернет без статуса"
         '
         'Форма_Конвертация
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1771, 821)
-        Me.Controls.Add(Me.TextBox32)
-        Me.Controls.Add(Me.Label34)
-        Me.Controls.Add(Me.TextBox31)
-        Me.Controls.Add(Me.Label33)
+        Me.ClientSize = New System.Drawing.Size(1843, 821)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
@@ -1105,8 +1105,8 @@ Partial Class Форма_Конвертация
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents TextBox31 As TextBox
-    Friend WithEvents Label33 As Label
-    Friend WithEvents TextBox32 As TextBox
-    Friend WithEvents Label34 As Label
+    Friend WithEvents TextBox33 As TextBox
+    Friend WithEvents Label35 As Label
+    Friend WithEvents TextBox34 As TextBox
+    Friend WithEvents Label36 As Label
 End Class

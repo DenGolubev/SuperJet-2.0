@@ -32,29 +32,29 @@ Public Class Форма_Главная
         Next
     End Sub
 
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        a = Date.Now.Hour
-        b = Date.Now.Minute
-        c = Date.Now.Second
-        d = Date.Now.DayOfWeek
-        f = Date.Now.ToLongDateString
+    'Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+    '    a = Date.Now.Hour
+    '    b = Date.Now.Minute
+    '    c = Date.Now.Second
+    '    d = Date.Now.DayOfWeek
+    '    f = Date.Now.ToLongDateString
 
-        TextBox1.Text = a
-        TextBox1.Refresh()
+    '    TextBox1.Text = a
+    '    TextBox1.Refresh()
 
-        TextBox2.Text = b
-        TextBox2.Refresh()
+    '    TextBox2.Text = b
+    '    TextBox2.Refresh()
 
-        TextBox3.Text = c
-        TextBox3.Refresh()
+    '    TextBox3.Text = c
+    '    TextBox3.Refresh()
 
-        TextBox4.Text = день_недели(d)
-        TextBox4.Refresh()
+    '    TextBox4.Text = день_недели(d)
+    '    TextBox4.Refresh()
 
-        TextBox5.Text = f
-        TextBox5.Refresh()
+    '    TextBox5.Text = f
+    '    TextBox5.Refresh()
 
-    End Sub
+    'End Sub
 
     Private Sub Форма_Главная_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         c_load = file_1(a)

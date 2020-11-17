@@ -7,7 +7,6 @@ Module Модуль_check
         Dim UIN As Long
         UIN = Convert.ToInt64(a)
         Dim internet_status As Boolean = True
-
         Dim count_tarif As Integer = Count_data(count_tarif, "Select [UIN] from [TaskList Total] where [UIN] = " & UIN & " and [Status] in ('Выполнена', 'Не выполнена') and [Type] in ('Подключение FTTB', 'Первичное переключение абонентов на PON', 
         'Подключение/переключение на PON с ОРК', 'Переключение с другого оператора', 'Инсталляция PON с ОРШ', 'Подключение услуг на PON') and [Internet_tarif] not in ('')")
         Dim count_status As Integer = Count_data(count_status, "Select [UIN] from [TaskList Total] where [UIN] = " & UIN & " and [Status] in ('Выполнена', 'Не выполнена') and [Type] in ('Подключение FTTB', 'Первичное переключение абонентов на PON', 
@@ -19,7 +18,7 @@ Module Модуль_check
         End If
 
 
-            Return internet_status
+        Return internet_status
     End Function
 
     Public Function check_TV_status(ByVal a As String)

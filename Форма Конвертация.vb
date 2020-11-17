@@ -51,13 +51,15 @@ Public Class Форма_Конвертация
 
         'Всего услуги интернет
         TextBox18.Text = Count_data(a, "Select [UIN] from [TaskList Total] where [Status] in ('Выполнена', 'Не выполнена') and [Type] in ('Подключение FTTB', 'Первичное переключение абонентов на PON', 
-        'Подключение/переключение на PON с ОРК', 'Переключение с другого оператора', 'Инсталляция PON с ОРШ', 'Подключение услуг на PON') and [Internet_status]  in ( 'Выполнена', 'Не выполнена') 
-        and [Ispolnitel]  LIKE '%" & TextBox1.Text & "%' and [DTCS] BETWEEN CDATE('" & DateTimePicker1.Value.ToShortDateString & "') and CDATE('" & DateTimePicker2.Value.ToShortDateString & "')")
+        'Подключение/переключение на PON с ОРК', 'Переключение с другого оператора', 'Инсталляция PON с ОРШ', 'Подключение услуг на PON') and [Internet_tarif] not in('') 
+        and [Internet_status]  in ( 'Выполнена', 'Не выполнена', '') and [Ispolnitel]  LIKE '%" & TextBox1.Text & "%' and [DTCS] BETWEEN CDATE('" & DateTimePicker1.Value.ToShortDateString & "') 
+        and CDATE('" & DateTimePicker2.Value.ToShortDateString & "')")
 
         'Всего услуги ТВ
         TextBox19.Text = Count_data(a, "Select [UIN] from [TaskList Total] where [Status] in ('Выполнена', 'Не выполнена') and [Type] in ('Подключение FTTB', 'Первичное переключение абонентов на PON', 
-        'Подключение/переключение на PON с ОРК', 'Переключение с другого оператора', 'Инсталляция PON с ОРШ', 'Подключение услуг на PON') and [TV_status] in ('Выполнена', 'Не выполнена') 
-        and [Ispolnitel]  LIKE '%" & TextBox1.Text & "%' and [DTCS] BETWEEN CDATE('" & DateTimePicker1.Value.ToShortDateString & "') and CDATE('" & DateTimePicker2.Value.ToShortDateString & "')")
+        'Подключение/переключение на PON с ОРК', 'Переключение с другого оператора', 'Инсталляция PON с ОРШ', 'Подключение услуг на PON') and [TV_tarif] not in ('') 
+        and [TV_status] in ('Выполнена', 'Не выполнена', '') and [Ispolnitel]  LIKE '%" & TextBox1.Text & "%' and [DTCS] BETWEEN CDATE('" & DateTimePicker1.Value.ToShortDateString & "') 
+        and CDATE('" & DateTimePicker2.Value.ToShortDateString & "')")
 
         'Выполнено интернет ФТТБ
         TextBox8.Text = Count_data(a, "Select [UIN] from [TaskList Total] where [Status] = ('Выполнена') and [Type] = ('Подключение FTTB') and [Internet_status] = ('Выполнена') 
@@ -86,8 +88,8 @@ Public Class Форма_Конвертация
         and [DTCS] BETWEEN CDATE('" & DateTimePicker1.Value.ToShortDateString & "') and CDATE('" & DateTimePicker2.Value.ToShortDateString & "') and [Ispolnitel]  LIKE '%" & TextBox1.Text & "%'")
 
         Output_DGV(DataGridView1, "Select TELN, Ispolnitel, Status, Type, Time_on, DTCS, Status_sdano, Internet_tarif, Internet_status, TV_tarif, TV_status from [TaskList Total] where 
-[Status] = 'Выполнена' and [Ispolnitel] LIKE '%" & TextBox1.Text & "%' and [DTCS] BETWEEN CDATE('" & DateTimePicker1.Value.ToShortDateString & "') and 
-CDATE('" & DateTimePicker2.Value.ToShortDateString & "')")
+        [Status] = 'Выполнена' and [Ispolnitel] LIKE '%" & TextBox1.Text & "%' and [DTCS] BETWEEN CDATE('" & DateTimePicker1.Value.ToShortDateString & "') and 
+        CDATE('" & DateTimePicker2.Value.ToShortDateString & "')")
 
         'Получение UTP на складе
         TextBox29.Text = Count_data_sum(a, 9, "Select * from [Equipment] where [Oborudovanie] = 'Кабель U/UTP cat 5е PVC нг-LS  4х2х0,51мм' and [Date_time] 
@@ -99,13 +101,13 @@ CDATE('" & DateTimePicker2.Value.ToShortDateString & "')")
         Output_DGV(DataGridView3, "Select * from [TaskList Total] where [Status_sdano] not in ('Сдано', 'Передано курьеру') and [Ispolnitel]  LIKE '%" & TextBox1.Text & "%'")
 
         'Всего услуги интернет без статуса
-        TextBox31.Text = Count_data(a, "Select [UIN] from [TaskList Total] where [Status] in ('Выполнена', 'Не выполнена') and [Type] in ('Подключение FTTB', 'Первичное переключение абонентов на PON', 
-        'Подключение/переключение на PON с ОРК', 'Переключение с другого оператора', 'Инсталляция PON с ОРШ', 'Подключение услуг на PON') and [Internet_status]  in ('') 
+        TextBox34.Text = Count_data(a, "Select [UIN] from [TaskList Total] where Status = ('Выполнена') and [Type] in ('Подключение FTTB', 'Первичное переключение абонентов на PON', 
+        'Подключение/переключение на PON с ОРК', 'Переключение с другого оператора', 'Инсталляция PON с ОРШ', 'Подключение услуг на PON') and [Internet_tarif] not in('') and [Internet_status] in ('') 
         and [Ispolnitel]  LIKE '%" & TextBox1.Text & "%' and [DTCS] BETWEEN CDATE('" & DateTimePicker1.Value.ToShortDateString & "') and CDATE('" & DateTimePicker2.Value.ToShortDateString & "')")
 
-        'Всего услуги ТВ
-        TextBox32.Text = Count_data(a, "Select [UIN] from [TaskList Total] where [Status] in ('Выполнена', 'Не выполнена') and [Type] in ('Подключение FTTB', 'Первичное переключение абонентов на PON', 
-        'Подключение/переключение на PON с ОРК', 'Переключение с другого оператора', 'Инсталляция PON с ОРШ', 'Подключение услуг на PON') and [TV_status] in ('') 
+        'Всего услуги ТВ без статуса
+        TextBox33.Text = Count_data(a, "Select [UIN] from [TaskList Total] where Status = ('Выполнена') and [Type] in ('Подключение FTTB', 'Первичное переключение абонентов на PON', 
+        'Подключение/переключение на PON с ОРК', 'Переключение с другого оператора', 'Инсталляция PON с ОРШ', 'Подключение услуг на PON') and [TV_tarif] not in ('') and [TV_status] in ('') 
         and [Ispolnitel]  LIKE '%" & TextBox1.Text & "%' and [DTCS] BETWEEN CDATE('" & DateTimePicker1.Value.ToShortDateString & "') and CDATE('" & DateTimePicker2.Value.ToShortDateString & "')")
 
     End Sub
@@ -182,6 +184,10 @@ CDATE('" & DateTimePicker2.Value.ToShortDateString & "')")
 
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
         checked_check(ON_Month(d1), OFF_Month(d2), CheckBox1, DateTimePicker1, DateTimePicker2)
+    End Sub
+
+    Private Sub TextBox34_TextChanged(sender As Object, e As EventArgs) Handles TextBox34.TextChanged
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
