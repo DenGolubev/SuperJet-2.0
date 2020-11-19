@@ -19,11 +19,7 @@ Public Class Форма_загрузки_TaskList
                 rec_datateble_TaskList(db_table, ProgressBar1)
             End If
         End If
-        '        update_count = Count_data(a, "UPDATE [TaskList Total] INNER JOIN [time_table] On [TaskList Total].[UIN] = [time_table].[UIN] Set [TaskList Total].[Status] = [time_table].[Status], 
-        '[TaskList Total].[Ispolnitel] = [time_table].[Ispolnitel]")
-        '        insert_count = Count_data(a, "Insert into [TaskList Total] Select * from time_table where [UIN] not in (Select [UIN] from [TaskList Total])")
-        '        TextBox1.Text = update_count
-        '        TextBox13.Text = insert_count
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -81,6 +77,10 @@ Public Class Форма_загрузки_TaskList
     Private Sub Форма_загрузки_TaskList_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         Временная_таблица("DELETE FROM [time_table]")
         Временная_таблица("DELETE FROM [time_table_UTP]")
+    End Sub
+
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+        Count_status()
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
